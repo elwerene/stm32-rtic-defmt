@@ -4,8 +4,8 @@
 #![no_main]
 #![no_std]
 
-use stm32-rtic-defmt as _; // global logger + panicking-behavior + memory layout
 use rtic::app;
+use stm32_rtic_defmt as _; // global logger + panicking-behavior + memory layout
 
 #[app(device = stm32f1xx_hal::pac)]
 const APP: () = {

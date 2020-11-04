@@ -6,8 +6,8 @@
 #![no_std]
 
 use embedded_hal::digital::v2::OutputPin as _;
-use stm32-rtic-defmt as _; // global logger + panicking-behavior + memory layout
 use rtic::{app, cyccnt::U32Ext};
+use stm32_rtic_defmt as _; // global logger + panicking-behavior + memory layout
 use stm32f1xx_hal::{
     gpio::{gpioc::PC13, GpioExt, Output, PushPull},
     rcc::RccExt,

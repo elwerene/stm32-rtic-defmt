@@ -24,7 +24,7 @@ branch = "main"
 features = ["print-defmt"]
 
 [dependencies]
-stm32-rtic-defmt = { path = ".." }
+stm32_rtic_defmt = { path = ".." }
 cortex-m = "0.6.3"
 cortex-m-rt = "0.6.12"
 

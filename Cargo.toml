@@ -1,6 +1,6 @@
 [package]
 authors = ["René Rössler <rene@freshx.de>"]
-name = "stm32-rtic-defmt"
+name = "stm32_rtic_defmt"
 edition = "2018"
 version = "0.1.0"
 
