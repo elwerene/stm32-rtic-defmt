@@ -17,9 +17,8 @@ const APP: () = {
         cp.DCB.enable_trace();
         cp.DWT.enable_cycle_counter();
 
-        // Schedule the task 3s into the future (the MCU runs at 64 MHz).
         cx.schedule
-            .hello_world_task(cx.start + 192_000_000.cycles())
+            .hello_world_task(cx.start + 24_000_000.cycles())
             .ok();
 
         defmt::info!("Hello from init!");
@@ -37,7 +36,7 @@ const APP: () = {
     #[task]
     fn hello_world_task(cx: hello_world_task::Context) {
         defmt::info!(
-            "Hello world from the future! (late: {:u32}",
+            "Hello world from the future! (late: {:u32} cycles)",
             cx.scheduled.elapsed().as_cycles(),
         );
     }

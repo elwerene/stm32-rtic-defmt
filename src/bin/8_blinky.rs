@@ -74,7 +74,7 @@ const APP: () = {
             defmt::info!("LED On");
         }
 
-        cx.schedule.blinky(cx.scheduled + 32_000_000.cycles()).ok();
+        cx.schedule.blinky(cx.scheduled + 8_000_000.cycles()).ok();
 
         *FLAG = !*FLAG;
     }
