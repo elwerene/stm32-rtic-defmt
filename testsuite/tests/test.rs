@@ -2,11 +2,11 @@
 #![no_main]
 
 use cortex_m_rt::entry;
-use my_app as _; // memory layout + panic handler
+use stm32-rtic-defmt as _; // memory layout + panic handler
 
 #[entry]
 fn main() -> ! {
     assert!(false, "TODO: Write actual tests");
 
-    my_app::exit();
+    stm32-rtic-defmt::exit();
 }
