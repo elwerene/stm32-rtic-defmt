@@ -1,6 +1,6 @@
 [package]
 authors = ["René Rössler <rene@freshx.de>"]
-name = "my-app"
+name = "stm32-rtic-defmt"
 edition = "2018"
 version = "0.1.0"
 
@@ -23,6 +23,7 @@ branch = "main"
 cortex-m = "0.6.4"
 cortex-m-rt = "0.6.13"
 cortex-m-rtic = "0.5.5"
+embedded-hal = "0.2.4"
 
 [dependencies.stm32f1xx-hal]
 version = "0.7.0"

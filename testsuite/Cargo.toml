@@ -1,5 +1,4 @@
 [package]
-# TODO(1) fix `authors` if you didn't use `cargo-generate`
 authors = ["René Rössler <rene@freshx.de>"]
 name = "testsuite"
 publish = false
@@ -25,7 +24,7 @@ branch = "main"
 features = ["print-defmt"]
 
 [dependencies]
-my-app = { path = ".." }
+stm32-rtic-defmt = { path = ".." }
 cortex-m = "0.6.3"
 cortex-m-rt = "0.6.12"
 
